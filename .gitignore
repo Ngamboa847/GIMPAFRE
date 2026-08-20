@@ -1,0 +1,17 @@
+# Backend
+gimpafre-backend/target/
+gimpafre-backend/.mvn/
+*.class
+
+# Frontend
+gimpafre-frontend/node_modules/
+gimpafre-frontend/dist/
+
+# Credenciales / config local
+application-local.properties
+.env
+*.log
+
+# IDE
+.vscode/
+.idea/

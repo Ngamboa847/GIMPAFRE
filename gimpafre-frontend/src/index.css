@@ -1,0 +1,77 @@
+/* Fuentes del sistema de diseño (Montserrat + Inter + Material Symbols) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* ==========================================================================
+   TOKENS DEL SISTEMA DE DISEÑO GIMPAFRE
+   Traducidos desde el tailwind.config de los mockups de Stitch.
+   ========================================================================== */
+@theme {
+  /* --- Colores de marca / institucionales --- */
+  --color-sidebar-bg: #070828;
+  --color-sidebar-active: #30315B;
+  --color-primary-container: #131545;
+  --color-secondary: #b52619;
+
+  /* --- Colores semánticos de estado --- */
+  --color-status-success: #1E7D45;
+  --color-status-warning: #B7791F;
+  --color-error: #ba1a1a;
+
+  /* --- Texto --- */
+  --color-text-main: #1C1C28;
+  --color-text-muted: #6B7080;
+  --color-on-primary-fixed: #131545;
+  --color-on-primary: #ffffff;
+  --color-on-background: #1a1c1d;
+  --color-on-surface: #1a1c1d;
+
+  /* --- Superficies y fondos --- */
+  --color-background: #f9f9fb;
+  --color-surface: #f9f9fb;
+  --color-surface-alt: #E7E7EC;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f5;
+  --color-surface-container: #eeeef0;
+  --color-surface-container-high: #e8e8ea;
+  --color-surface-container-highest: #e2e2e4;
+  --color-surface-variant: #e2e2e4;
+
+  /* --- Bordes y contornos --- */
+  --color-border-subtle: #DDDEE5;
+  --color-outline: #777680;
+  --color-outline-variant: #c7c5d0;
+
+  /* --- Fuentes --- */
+  --font-headline: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* --- Espaciados con nombre (del mockup) --- */
+  --spacing-stack-sm: 0.5rem;
+  --spacing-stack-md: 1rem;
+  --spacing-stack-lg: 2rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-container-padding: 2rem;
+  --spacing-sidebar-width: 250px;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-surface-container-low);
+  color: var(--color-text-main);
+}
+
+/* Configuración base del icono Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
